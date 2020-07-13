@@ -20,24 +20,12 @@ namespace Inveon.Data.Context
             : base("Name=InveonContext")
         {
         }
-
-        //public virtual DbSet<AspNetRoleClaims> AspNetRoleClaims { get; set; }
-        //public virtual DbSet<AspNetRoles> AspNetRoles { get; set; }
-        //public virtual DbSet<AspNetUserClaims> AspNetUserClaims { get; set; }
-        //public virtual DbSet<AspNetUsers> AspNetUsers { get; set; }
         public virtual DbSet<Product> Product { get; set; }
         public virtual DbSet<ProductImage> ProductImage { get; set; }
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            //modelBuilder.Entity<AspNetRoleClaims>().ToTable("AspNetRoleClaims");
-
-            //modelBuilder.Entity<AspNetRoles>().ToTable("AspNetRoles");
-
-            //modelBuilder.Entity<AspNetUserClaims>().ToTable("AspNetUserClaims");
-
-            //modelBuilder.Entity<AspNetUsers>().ToTable("AspNetUsers");
 
             modelBuilder.Entity<Product>().ToTable("Product");
 
