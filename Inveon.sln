@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inveon.Web", "Inveon.Web\Inveon.Web.csproj", "{2E7B26FD-5CDB-47F7-82A0-485F744120B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inveon.Data", "Inveon.Data\Inveon.Data.csproj", "{E90CEEAC-F6E1-4FA6-9111-4924FE73F824}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inveon.Model", "Inveon.Model\Inveon.Model.csproj", "{378609FD-38A3-4785-A1F6-1BE62D1FF7B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inveon.Service", "Inveon.Service\Inveon.Service.csproj", "{0563122A-8165-4962-9720-A69BF4FAEE2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inveon.Common", "Inveon.Comon\Inveon.Common.csproj", "{B03022F2-1B12-4A3F-8872-1CB1964F8DDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inveon.Admin", "Inveon.Admin\Inveon.Admin.csproj", "{FC71F536-10A3-4DD1-85F3-E8928F47F7B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E7B26FD-5CDB-47F7-82A0-485F744120B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E7B26FD-5CDB-47F7-82A0-485F744120B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E7B26FD-5CDB-47F7-82A0-485F744120B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E7B26FD-5CDB-47F7-82A0-485F744120B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E90CEEAC-F6E1-4FA6-9111-4924FE73F824}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E90CEEAC-F6E1-4FA6-9111-4924FE73F824}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E90CEEAC-F6E1-4FA6-9111-4924FE73F824}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E90CEEAC-F6E1-4FA6-9111-4924FE73F824}.Release|Any CPU.Build.0 = Release|Any CPU
+		{378609FD-38A3-4785-A1F6-1BE62D1FF7B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{378609FD-38A3-4785-A1F6-1BE62D1FF7B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{378609FD-38A3-4785-A1F6-1BE62D1FF7B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{378609FD-38A3-4785-A1F6-1BE62D1FF7B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0563122A-8165-4962-9720-A69BF4FAEE2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0563122A-8165-4962-9720-A69BF4FAEE2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0563122A-8165-4962-9720-A69BF4FAEE2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0563122A-8165-4962-9720-A69BF4FAEE2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B03022F2-1B12-4A3F-8872-1CB1964F8DDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B03022F2-1B12-4A3F-8872-1CB1964F8DDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B03022F2-1B12-4A3F-8872-1CB1964F8DDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B03022F2-1B12-4A3F-8872-1CB1964F8DDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC71F536-10A3-4DD1-85F3-E8928F47F7B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC71F536-10A3-4DD1-85F3-E8928F47F7B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC71F536-10A3-4DD1-85F3-E8928F47F7B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC71F536-10A3-4DD1-85F3-E8928F47F7B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D61AD718-BBD2-4C6E-8BA8-6582D9CE132D}
+	EndGlobalSection
+EndGlobal

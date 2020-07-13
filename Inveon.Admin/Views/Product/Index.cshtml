@@ -1,0 +1,77 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@model IEnumerable<Inveon.Model.EntityModels.ProductModel>
+
+<br />
+<br />
+<br />
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <a href="@Url.Action("Create","Product")" class="btn btn-success">
+                New Product
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="table-responsive">
+            <table class="table" id="gks-prim-table">
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Product Description</th>
+                        <th>Barcode</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <th>@item.Name</th>
+                            <th>@item.Description</th>
+                            <th>@item.Barcode</th>
+                            <th>@item.Quantity</th>
+                            <th>@item.Price</th>
+                            <th>
+                                <a href="#" class="btn btn-danger" data-target="#confirmModal" onclick="openDeleteBox(@item.Id)" title="Delete">
+                                    Delete
+                                </a>
+                            </th>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    var baseUrl = location.origin;
+    function openDeleteBox(id) {
+
+        bootbox.confirm("Are you sure?", function (result) {
+            /* your callback code */
+            $.ajax({
+                type: 'POST',
+                dataType: 'json',
+                url: "/Product/DeleteProduct?id=" + id,
+                success: function (response) {
+                    if (response.Success === true) {
+                        toastr.success(response.Message);
+                        window.location.href = baseUrl + "/Product";
+                    }
+                    else {
+                        toastr.error(response.Message);
+                    }
+                }
+            });
+        })
+    }
+</script>

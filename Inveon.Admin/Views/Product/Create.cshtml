@@ -1,0 +1,79 @@
+﻿@model Inveon.Model.EntityModels.ProductModel
+@{
+    ViewBag.Title = "Create";
+}
+
+
+@using (Html.BeginForm("CreateProduct", "Product", FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <h4>Create Product</h4>
+    <hr />
+    <div class="form-group">
+        @Html.Label("Name ", new { @class = "col-md-2 control-label" })
+        <div class="col-sm-4">
+            <div class='input-group' id='name'>
+                @Html.TextBoxFor(x => x.Name, new { @class = "form-control", @id = "name" })
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.Label("Description ", new { @class = "col-md-2 control-label" })
+        <div class="col-sm-4">
+            <div class='input-group' id='description'>
+                @Html.TextBoxFor(x => x.Description, new { @class = "form-control", @id = "description" })
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.Label("Price ", new { @class = "col-md-2 control-label" })
+        <div class="col-sm-4">
+            <div class='input-group' id='price'>
+                @Html.TextBoxFor(x => x.Price, new { @class = "form-control required numeric", @id = "price" })
+
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.Label("Barcode ", new { @class = "col-md-2 control-label" })
+        <div class="col-sm-4">
+            <div class='input-group' id='barcode'>
+                @Html.TextBoxFor(x => x.Barcode, new { @class = "form-control", @id = "barcode" })
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.Label("Quantity ", new { @class = "col-md-2 control-label" })
+        <div class="col-sm-4">
+            <div class='input-group' id='barcode'>
+                @Html.TextBoxFor(x => x.Quantity, new { @class = "form-control", @type = "numeric", @id = "quantity" })
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.Files, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.Files, "", new { @type = "file", @multiple = "multiple" })
+            @Html.ValidationMessageFor(model => model.Files, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" class="btn btn-default" value="Create" />
+        </div>
+    </div>
+}
+@if (ViewBag.ErrorMessages != null)
+{
+    <div class="alert alert-danger m--margin-15" role="alert">
+        <strong>
+            Warning!
+        </strong>
+        <br />
+        <ul>
+            <li>
+               @Html.Raw( ViewBag.ErrorMessages)
+            </li>
+        </ul>
+    </div>
+}
