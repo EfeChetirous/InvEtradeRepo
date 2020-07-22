@@ -30,7 +30,7 @@ namespace Inveon.Data.DummyEntity
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Data Source=localhost;Initial Catalog=InveonDB; User ID=sa;Password=1590efeksk; Connection Timeout=240;MultipleActiveResultSets=True;");
+                optionsBuilder.UseSqlServer("Data Source=localhost;Initial Catalog=InveonDB; User ID=sa;Password=xxxxx; Connection Timeout=240;MultipleActiveResultSets=True;");
             }
         }
 
